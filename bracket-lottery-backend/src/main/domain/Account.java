@@ -26,6 +26,11 @@ public class Account {
   private String zipcode;
   
   private Double balance;
+  private Double moneyAdded;
+  private Double moneyWon;
+  
+  private Date createdDateTime;
+  private Date updatedDateTime;
   
   
 	public Integer getId() {
