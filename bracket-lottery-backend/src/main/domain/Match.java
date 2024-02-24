@@ -18,8 +18,8 @@ public class Match {
 	  private Double entryFee;
 	  private Double grandPrize;
 	  private Date startTime;
-//	  private User winner;
-	  
+	  //private User winner;
+	  //private GameStatusEnum gameStatus;
 	  private Date createdDateTime;
 	  private Date updatedDateTime;
 }
