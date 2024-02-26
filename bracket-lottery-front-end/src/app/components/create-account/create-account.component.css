@@ -1,0 +1,11 @@
+.create-account {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	/* min-height: 75vh; */
+    margin: auto;
+}
+
+.form-control {
+    margin: 2px;
+}
