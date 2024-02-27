@@ -1,10 +1,11 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-create-account',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './create-account.component.html',
   styleUrl: './create-account.component.css'
 })
