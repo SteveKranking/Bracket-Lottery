@@ -3,6 +3,7 @@ import {LoginScreenComponent} from './components/login-screen/login-screen.compo
 import {CreateAccountComponent} from './components/create-account/create-account.component';
 
 export const routes: Routes = [
+    { path: '', component: LoginScreenComponent },
     { path: 'login-component', component: LoginScreenComponent },
     { path: 'create-account-component', component: CreateAccountComponent },
 ];
