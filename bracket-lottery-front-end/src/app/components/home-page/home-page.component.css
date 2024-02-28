@@ -19,3 +19,9 @@
     height: 40px;
     width: 40px;
 }
+
+.contest-list {
+    margin:auto;
+    margin-top:20px;
+    padding:20px;
+}
