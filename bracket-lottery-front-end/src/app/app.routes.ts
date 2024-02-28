@@ -5,7 +5,7 @@ import {HomePageComponent} from './components/home-page/home-page.component';
 
 export const routes: Routes = [
     { path: '', component: LoginScreenComponent },
-    { path: 'login-component', component: LoginScreenComponent },
-    { path: 'create-account-component', component: CreateAccountComponent },
-    { path: 'home-page-component', component: HomePageComponent },
+    { path: 'login', component: LoginScreenComponent },
+    { path: 'create-account', component: CreateAccountComponent },
+    { path: 'home-page', component: HomePageComponent },
 ];
