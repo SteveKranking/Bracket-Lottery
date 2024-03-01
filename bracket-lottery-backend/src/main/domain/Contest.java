@@ -6,10 +6,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-public class Match {
+public class Contest {
 	  @Id
 	  @GeneratedValue(strategy=GenerationType.AUTO)
 	  private Integer id;
+	  private String contestName;
 	  private Integer maxNumberOfPlayers;
 	  private Integer currentPlayersInMatch; //can just do usersInMatch.size?
 	  //will eventually be joined with Users

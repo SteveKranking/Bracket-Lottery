@@ -18,9 +18,11 @@ public class Account {
   private String firstname;
   private String lastname;
   private Date dateOfBirth;
+  private String phoneNumber;
   //Address?
   private String street;
   private String aptNumber;
+  private String city;
   private String state;
   private String country;
   private String zipcode;
