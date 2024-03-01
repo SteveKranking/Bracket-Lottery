@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Account } from '../models/account';
 import { Observable } from 'rxjs';
 
@@ -14,8 +14,9 @@ export class AccountService {
     this.accountEndpoint = 'http://localhost:8080/account';
    }
 
-   public createAccount(account : Account) {
-    return this.httpClient.post(`${this.accountEndpoint}/createAccount`, account);
+   createAccount() {
+      console.log("in the service!!!");
+      this.httpClient.post(`${this.accountEndpoint}/createAccount`, 'a message from the front');
    }
 
   //  updateUser(id:number, user:User): Observable<Object>{

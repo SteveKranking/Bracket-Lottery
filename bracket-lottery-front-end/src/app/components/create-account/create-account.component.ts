@@ -1,14 +1,15 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
-import { AccountService } from '../../services/account-service.service';import { Account } from '../../models/account';
+import { AccountService } from '../../services/account-service.service';
+import { Account } from '../../models/account';
  
 @Component({
   selector: 'app-create-account',
   standalone: true,
-  imports: [NgFor, Router, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [NgFor, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './create-account.component.html',
-  styleUrl: './create-account.component.css'
+  styleUrl: './create-account.component.css',
 })
 export class CreateAccountComponent {
 
@@ -18,8 +19,13 @@ export class CreateAccountComponent {
   constructor(
     private router: Router,
     private accountService: AccountService
-  ) {
-  
+  ) { }
+
+
+
+  createNewAccount() {
+    console.log("event binded!!!");
+    this.accountService.createAccount();
   }
 }
 
