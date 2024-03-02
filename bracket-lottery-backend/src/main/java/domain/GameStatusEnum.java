@@ -1,4 +1,4 @@
-package com.example.bracketlotterybackend;
+package domain;
 
 public class GameStatusEnum {
 	//Not Yet Started
