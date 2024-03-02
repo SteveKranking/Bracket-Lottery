@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import backet.lottery.backend.repos.AccountRepository;
 import backet.lottery.backend.services.AccountService;
 
 
@@ -27,7 +28,7 @@ public class AccountController {
 	@Autowired
 	private AccountService accountService;
 	
-//    private final AccountRepository accountRepository;
+    private final AccountRepository accountRepository;
     
     @GetMapping("/createAccount")
     @ResponseStatus(value = HttpStatus.OK)

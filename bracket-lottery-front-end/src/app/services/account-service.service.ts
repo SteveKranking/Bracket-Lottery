@@ -16,7 +16,7 @@ export class AccountService {
 
    createAccount() {
       console.log("in the service!!!");
-      this.httpClient.post(`${this.accountEndpoint}/createAccount`, 'a message from the front');
+      this.httpClient.get(`${this.accountEndpoint}/createAccount`);
    }
 
   //  updateUser(id:number, user:User): Observable<Object>{
