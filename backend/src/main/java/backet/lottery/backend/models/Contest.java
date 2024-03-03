@@ -2,22 +2,32 @@ package backet.lottery.backend.models;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name ="CONTEST")
 public class Contest {
 	  @Id
 	  @GeneratedValue(strategy=GenerationType.AUTO)
-	  private Integer id;
-	  private String contestName;
-	  private Integer maxNumberOfPlayers;
-	  private Integer currentPlayersInMatch; //can just do usersInMatch.size?
+	  @Column private Integer id;
+	  @Column private String contestName;
+	  @Column private Integer maxNumberOfPlayers;
+	  @Column private Integer currentPlayersInMatch; //can just do usersInMatch.size?
 	  //will eventually be joined with Users
-	  //private User usersInMatch;
-	  private String sport; //maybe add a sports enum?
-	  private Double entryFee;
-	  
+	  //@Column private User usersInMatch;
+	  @Column private String sport; //maybe add a sports enum?
+	  @Column private Double entryFee;
+	  @Column private Double grandPrize;
+	  @Column private Date startTime;
+	  //@Column private User winner;
+	  //@Column private GameStatusEnum gameStatus;
+	  @Column private Date createdDateTime;
+	  @Column private Date updatedDateTime;
 	  
 	  @Override
 	  public String toString() {
@@ -87,10 +97,5 @@ public class Contest {
 	public void setUpdatedDateTime(Date updatedDateTime) {
 		this.updatedDateTime = updatedDateTime;
 	}
-	private Double grandPrize;
-	  private Date startTime;
-	  //private User winner;
-	  //private GameStatusEnum gameStatus;
-	  private Date createdDateTime;
-	  private Date updatedDateTime;
+
 }

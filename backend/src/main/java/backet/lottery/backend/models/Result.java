@@ -2,10 +2,12 @@ package backet.lottery.backend.models;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
+
 public class Result {
-	//private Contest contest;
-	//private User winner;	  
+	//@Column private Contest contest;
+	//@Column private User winner;	  
 	
-	private Date createdDateTime;
-	private Date updatedDateTime;
+	@Column private Date createdDateTime;
+	@Column private Date updatedDateTime;
 }
