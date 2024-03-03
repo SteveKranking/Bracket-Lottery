@@ -1,0 +1,14 @@
+.login-box {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 75vh;
+}
+
+/* was originally for outer div */
+/* probably like it better as not a card? */
+#login-card {
+	margin: auto;
+	width: 50%;
+	margin-top: 200px;
+}

@@ -1,0 +1,27 @@
+.sports-row {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	/* min-height: 75vh; */
+    margin: auto;
+}
+
+.sportsButton {
+    margin:5px;
+    background-color: rgb(241, 205, 137);
+    border-color: black;
+    color: black;
+    font-weight: bold;
+}
+
+.sports-image{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.contest-list {
+    margin:auto;
+    margin-top:20px;
+    padding:20px;
+}
