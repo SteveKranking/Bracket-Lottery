@@ -18,7 +18,5 @@ public class AccountController {
     	
     	System.out.println("Message was: " + message);
     	System.out.println("Message was: " + message);
-//    	String message = "Connected to backend!";
-//    	return message;
     }
 }

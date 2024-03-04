@@ -1,27 +1,20 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { Account } from '../models/account';
-import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
 
-  private accountEndpoint: string;
+  private accountEndpoint = 'http://localhost:8080/account';
+  private httpClient: HttpClient;
   
-  constructor(private httpClient: HttpClient) {
-    this.accountEndpoint = 'http://localhost:8080/account';
+  constructor(httpClient: HttpClient) {
+      this.httpClient = httpClient;
    }
 
    createAccount() {
-      console.log("in the service!!!");
-      this.httpClient.post(`${this.accountEndpoint}`, 'message from frontend');
+      return this.httpClient.post(`${this.accountEndpoint}/createAccount`, 'this is a message from the front end').subscribe();
     }
-
-  //  updateUser(id:number, user:User): Observable<Object>{
-  //   return this.httpClient.put(`${this.basUrl}/${id}`, user);
-  // }
 
 }

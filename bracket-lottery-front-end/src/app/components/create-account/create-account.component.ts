@@ -2,7 +2,6 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { AccountService } from '../../services/account-service.service';
-import { Account } from '../../models/account';
  
 @Component({
   selector: 'app-create-account',
@@ -22,9 +21,7 @@ export class CreateAccountComponent {
   ) { }
 
 
-
   createNewAccount() {
-    console.log("event binded!!!");
     this.accountService.createAccount();
   }
 }
